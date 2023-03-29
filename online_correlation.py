@@ -88,7 +88,7 @@ class CorrelationGUI:
                 x.append(coords[i] - 250)
                 y.append(250 - coords[i+1])
         corr = calculate_correlation(x, y)
-        self.label.config(text='Correlation: {:.2f}'.format(corr))
+        self.label.config(text='Correlation: {:.4f}'.format(corr))
 
 def calculate_correlation(x, y):
     if len(x) < 2 or len(y) < 2:
